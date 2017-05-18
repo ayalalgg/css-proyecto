@@ -1,28 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
-body{
-	font-size: 16px;
-	font-family: Dancing Script;
+body {
+    font-size: 16px;
+    font-family: Dancing Script;
+    margin: 10;
+    background-color: #000;
 }
 
-header{
-	height: 80px;
-	padding: 2% 2% 0% 2%;
-	background-color: #5b7989;
-	color: #fff;
+header {
+    background: #5b7989;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
 }
-.logo-header{
-	float: left;
-	display: block;
-	font-size: 2em;
+
+.site-name {
+    float: left;
+    color: #fff;
+    padding: 20px 0 0 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    font-size: 2em;
+    text-shadow: 2px 2px #02010a;
 }
-nav{
-	float: right;
+
+nav {
+    float: right;
 }
-nav ul{
-	list-style: none;
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
 }
+
 nav ul li {
-	display: inline-block;
-	line-height: 80px;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-size: 1.2em;
+    padding: 0 15px;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
 }
