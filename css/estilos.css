@@ -129,3 +129,27 @@ footer div p{
         color:  #000;
         text-decoration:  none;
 }
+.contenedor{
+    display: flex;
+    background-color: #d5c75f;
+    padding: 15px;
+}
+.gallery {
+    width: 33.33%;
+    height: 250px;
+    text-align: center;
+}
+.gallery img {
+    width: 80%;
+    height: 90%;
+    box-shadow: 2px 2px 7px #000;
+}
+.filtro-grayscale img{
+    filter: grayscale(100%);
+}
+.filtro-blur img{
+    filter: blur(10px);
+}
+.filtro-sepia img{
+    filter: sepia(90%);
+}
