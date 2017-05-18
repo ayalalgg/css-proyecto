@@ -39,22 +39,70 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #fff;
-	font-size: 1.2em;
+    color: #fff;
+    font-size: 1.2em;
     padding: 0 15px;
     text-decoration: underline;
 }
 
 nav ul li a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-.img-primary{
+.img-primary {
     background-color: #C6d5c5;
-    text-align: center; 
+    text-align: center;
 }
-.img-primary img{
+
+.img-primary img {
     height: 300px;
     margin: 10px 0px 10px 0px;
-    box-shadow:  2px 2px 7px #000;
+    box-shadow: 2px 2px 7px #000;
+}
+
+.img-secundary {
+    display: flex;
+    background-color: #d5c75f;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+
+.col-secundary {
+    width: 50%;
+    height: 250px;
+    text-align: center;
+}
+
+.img-secundary a {
+    text-decoration: none;
+}
+
+.col-secundary img {
+    width: 80%;
+    height: 90%;
+    box-shadow: 2px 2px 7px #000;
+}
+
+.col-secundary p {
+    margin-top: 0;
+    color: #000;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.col-secundary p:hover {
+    text-decoration: none;
+}
+.animacion1{
+    transition: transform 0.5s;
+}
+.animacion1:hover{
+    transform: rotate(10deg);
+}
+.animacion2{
+    transition: transform 0.5s;
+}
+.animacion2:hover{
+    transform: translate(20px, -5px);
 }
