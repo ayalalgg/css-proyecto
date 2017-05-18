@@ -2,7 +2,7 @@
 body {
     font-size: 16px;
     font-family: Dancing Script;
-    margin: 10;
+    margin: 10px;
     background-color: #000;
 }
 
@@ -50,7 +50,7 @@ nav ul li a:hover {
 }
 
 .img-primary {
-    background-color: #C6d5c5;
+    background-color: #82c3a6;
     text-align: center;
 }
 
@@ -105,4 +105,27 @@ nav ul li a:hover {
 }
 .animacion2:hover{
     transform: translate(20px, -5px);
+}
+footer{
+    display: flex;
+    background-color: #C6d5c5;
+    border-top: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+footer div{
+    width: 25%;
+    height: 250px;
+    text-align: center;
+}
+footer div h2{
+        font-weight: bold;
+        font-size:  1.7em;
+        color:  #000;
+        text-shadow: 1px 1px #02010a;
+}
+footer div p{
+        font-weight: bold;
+        font-size:  1.2em;
+        color:  #000;
+        text-decoration:  none;
 }
