@@ -13,7 +13,6 @@ header {
 }
 
 .site-name {
-    float: left;
     color: #fff;
     padding: 20px 0 0 20px;
     text-decoration: none;
@@ -21,10 +20,6 @@ header {
     font-weight: 700;
     font-size: 2em;
     text-shadow: 2px 2px #02010a;
-}
-
-nav {
-    float: right;
 }
 
 nav ul {
@@ -61,14 +56,13 @@ nav ul li a:hover {
 }
 
 .img-secundary {
-    display: flex;
     background-color: #d5c75f;
     padding: 20px;
     border-top: 1px solid black;
 }
 
 .col-secundary {
-    width: 50%;
+    width: 100%;
     height: 250px;
     text-align: center;
 }
@@ -94,62 +88,121 @@ nav ul li a:hover {
 .col-secundary p:hover {
     text-decoration: none;
 }
-.animacion1{
+
+.animacion1 {
     transition: transform 0.5s;
 }
-.animacion1:hover{
+
+.animacion1:hover {
     transform: rotate(10deg);
 }
-.animacion2{
+
+.animacion2 {
     transition: transform 0.5s;
 }
-.animacion2:hover{
+
+.animacion2:hover {
     transform: translate(20px, -5px);
 }
-footer{
-    display: flex;
+
+footer {
     background-color: #C6d5c5;
     border-top: 1px solid black;
     border-radius: 0 0 10px 10px;
 }
-footer div{
-    width: 25%;
+
+footer div {
+    width: 100%;
     height: 250px;
     text-align: center;
 }
-footer div h2{
-        font-weight: bold;
-        font-size:  1.7em;
-        color:  #000;
-        text-shadow: 1px 1px #02010a;
+
+footer div h2 {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #000;
+    text-shadow: 1px 1px #02010a;
 }
-footer div p{
-        font-weight: bold;
-        font-size:  1.2em;
-        color:  #000;
-        text-decoration:  none;
+
+footer div p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
 }
-.contenedor{
-    display: flex;
+
+.contenedor {
     background-color: #d5c75f;
     padding: 15px;
 }
+
 .gallery {
-    width: 33.33%;
+    width: 100%;
     height: 250px;
     text-align: center;
 }
+
 .gallery img {
     width: 80%;
     height: 90%;
     box-shadow: 2px 2px 7px #000;
 }
-.filtro-grayscale img{
+
+.filtro-grayscale img {
     filter: grayscale(100%);
 }
-.filtro-blur img{
+
+.filtro-blur img {
     filter: blur(10px);
 }
-.filtro-sepia img{
+
+.filtro-sepia img {
     filter: sepia(90%);
+}
+
+
+/*vercion movil*/
+
+@media (max-width:900px) {
+    header {
+        height: 100%;
+    }
+    nav {
+        text-align: center;
+    }
+    .site-name {
+        text-align: center;
+    }
+    .img-primary img {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        box-shadow: 2px 2px 7px #000;
+    }
+    .col-secundary {
+        margin-bottom: 15px;
+    }
+    .contenedor {
+        padding-bottom: 0px;
+    }
+    footer div {
+        height: 100%;
+    }
+}
+
+@media (min-width:900px) {
+    nav {
+        float: right;
+    }
+    .site-name {
+        float: left;
+    }
+    footer {
+        display: flex;
+    }
+    .contenedor {
+        display: flex;
+    }
+    .img-secundary {
+        display: flex;
+    }
 }
